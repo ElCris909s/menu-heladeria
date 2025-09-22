@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú Digital · Heladería</title>
+  <meta name="description" content="Menú digital unificado para La Esquina Heladería y Dulce Menta.">
+  <!-- CSS externo (lo crearemos en el siguiente paso) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="brand">
+        <a class="brand__link" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__logo" aria-hidden="true"></span>
+          <span class="brand__name">Menú Digital · La Esquina & Dulce Menta Heladería</span>
+        </a>
+      </div>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="#helados-la-tienda">Helados La Tienda</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#rey-paletas">Rey Paletas (Helados Rellenos)</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#helados-artesanales">Helados Artesanales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="site-main" role="main">
+    <!-- Helados La Tienda -->
+     <section id="helados-la-tienda" class="section section--menu" aria-labelledby="title-helados-la-tienda">
+  <div class="container">
+    <header class="section__header">
+        <img src="assets/helados/fondo_helados_LaTienda.jpg" alt="Helados La Tienda" class="section__logo">
+        <h2 id="title-helados-la-tienda" class="section__title">Helados La Tienda</h2>
+        <p class="section__subtitle">Sabores disponibles · Precio unitario</p>
+    </header>
+
+
+    <div class="section__content">
+      <!-- Lista de sabores con precio a la derecha -->
+      <ul class="menu-list" aria-label="Lista de sabores Helados La Tienda">
+        <li class="menu-item">
+          <span class="name">Amor Brujo</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Leche Condensada</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Chocolate</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Nuez</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Almendra</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Manjar de Coco</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Leche Menta</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Naranjilla</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Limón</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Maracuyá</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Ronpope</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Yurak (Chocolate Blanco)</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Coco</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Mora</span>
+          <span class="price">$1.60</span>
+        </li>
+        <li class="menu-item">
+          <span class="name">Maní</span>
+          <span class="price">$1.60</span>
+        </li>
+      </ul>
+
+      <!-- Foto general del tipo de helado -->
+      <figure class="section-media">
+        <img src="assets/helados/helados-la-tienda.jpg" alt="Helados La Tienda - presentación general">
+        <!-- <figcaption>Opcional: texto corto.</figcaption> -->
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- Rey Paletas (Helados Rellenos) -->
+    <section id="rey-paletas" class="section" aria-labelledby="title-rey-paletas">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="title-rey-paletas" class="section__title">Rey Paletas (Helados Rellenos)</h2>
+          <p class="section__subtitle">Paletas artesanales con rellenos deliciosos.</p>
+        </header>
+
+        <div class="products-grid" id="grid-rey-paletas" aria-live="polite">
+          <p class="placeholder">Aún no hay productos en esta sección.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Helados Artesanales -->
+    <section id="helados-artesanales" class="section" aria-labelledby="title-helados-artesanales">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="title-helados-artesanales" class="section__title">Helados Artesanales</h2>
+          <p class="section__subtitle">Hechos en casa con ingredientes seleccionados.</p>
+        </header>
+
+        <div class="products-grid" id="grid-helados-artesanales" aria-live="polite">
+          <p class="placeholder">Aún no hay productos en esta sección.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p class="footer__text">
+      © 2025 FML Mejía Morocho · Todos los derechos reservados
+    </p>
+    <p class="footer__text">
+      Diseñado para La Esquina Heladería & Dulce Menta
+    </p>
+  </div>
+</footer>
+
+  <!-- JS externo (lo crearemos después) -->
+  <script src="app.js" defer></script>
+  <noscript>Habilita JavaScript para una mejor experiencia.</noscript>
+</body>
+</html>
